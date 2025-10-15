@@ -8,8 +8,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Lab5 {
-	private static final char[] Confirm = null;
-
 	public static void main(String[] args) {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
@@ -51,7 +49,7 @@ public class Lab5 {
 		driver.findElement(By.partialLinkText("Account")).click();
         driver.findElement(By.linkText("Register")).click();
         WebElement firstName = driver.findElement(By.id("input-firstname"));
-        String LFirstName = "Priiya"; 
+        String LFirstName = "Priya"; 
         firstName.sendKeys(LFirstName);
         System.out.println("Entered 33 characters in First Name field.");
         driver.findElement(By.xpath("//input[@value='Continue']")).click();
