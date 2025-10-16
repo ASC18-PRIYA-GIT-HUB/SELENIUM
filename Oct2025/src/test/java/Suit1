@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<suite parallel="false" name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="Pack1.TC008 TestNG"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->

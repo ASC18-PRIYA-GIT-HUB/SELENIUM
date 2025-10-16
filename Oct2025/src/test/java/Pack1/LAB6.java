@@ -96,9 +96,9 @@ public class LAB6 {
         System.out.println("Add to Cart message: " + successMsg.getText());
 
         if (successMsg.getText().contains("Success: You have added HTC Touch HD")) {
-            System.out.println("✅ HTC Touch HD added to cart successfully.");
+            System.out.println("HTC Touch HD added to cart successfully.");
         } else {
-            System.out.println("❌ Cart message not matched.");
+            System.out.println("Cart message not matched.");
         }
 
         driver.findElement(By.id("cart")).click();

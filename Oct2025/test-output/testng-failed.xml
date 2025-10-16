@@ -3,20 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pack1.TC008">
+      <class name="Pack1.Revision">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="f"/>
+          <include name="f" invocation-numbers="1 2"/>
           <include name="beforeMethod"/>
-          <include name="test2"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Pack1.TC008 -->
+      </class> <!-- Pack1.Revision -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -4,56 +4,37 @@
   <test thread-count="5" parallel="tests" name="FirefoxTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="Pack1.TC008">
+      <class name="Pack1.Revision">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
           <include name="f"/>
           <include name="beforeMethod"/>
-          <include name="test2"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Pack1.TC008 -->
+      </class> <!-- Pack1.Revision -->
     </classes>
   </test> <!-- FirefoxTest(failed) -->
-  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
-    <parameter name="browser" value="chrome"/>
-    <classes>
-      <class name="Pack1.TC008">
-        <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="f" invocation-numbers="0 1"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Pack1.TC008 -->
-    </classes>
-  </test> <!-- ChromeTest(failed) -->
   <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="Pack1.TC008">
+      <class name="Pack1.Revision">
         <methods>
-          <include name="afterClass"/>
-          <include name="beforeSuite"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeClass"/>
-          <include name="f" invocation-numbers="0 1"/>
+          <include name="f"/>
           <include name="beforeMethod"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Pack1.TC008 -->
+      </class> <!-- Pack1.Revision -->
     </classes>
   </test> <!-- EdgeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Pack1.Revision">
+        <methods>
+          <include name="f"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- Pack1.Revision -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
