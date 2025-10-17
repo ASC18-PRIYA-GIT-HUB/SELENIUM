@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="User Registration Suite">
+    <test name="Registration on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Pack1.LAB14_Reg"/>
+        </classes>
+    </test>
+</suite>

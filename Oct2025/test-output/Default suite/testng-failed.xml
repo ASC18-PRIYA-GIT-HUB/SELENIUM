@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pack1.Revision">
+      <class name="Pack1.LAB14_Reg">
         <methods>
-          <include name="f" invocation-numbers="1 2"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="registerUser"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Pack1.Revision -->
+      </class> <!-- Pack1.LAB14_Reg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
