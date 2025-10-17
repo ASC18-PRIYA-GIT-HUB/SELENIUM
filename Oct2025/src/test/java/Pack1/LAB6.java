@@ -132,6 +132,6 @@ public class LAB6 {
 
         System.out.println("LAB6 test completed successfully!");
 
-        driver.quit();
+        //driver.quit();
     }
 }
