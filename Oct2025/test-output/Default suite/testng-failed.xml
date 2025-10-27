@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pack1.LAB14_Reg">
+      <class name="com.snapdeal.tests.loginsnapdeal">
         <methods>
-          <include name="registerUser"/>
-          <include name="setup"/>
+          <include name="setupDriver"/>
+          <include name="loginSnapdeal"/>
+          <include name="initReport"/>
           <include name="tearDown"/>
+          <include name="setupPages"/>
         </methods>
-      </class> <!-- Pack1.LAB14_Reg -->
+      </class> <!-- com.snapdeal.tests.loginsnapdeal -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

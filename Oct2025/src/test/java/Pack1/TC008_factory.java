@@ -113,7 +113,7 @@ public class TC008_factory {
   public Object[][] logindata() {
     return new Object[][] {
       new Object[] { "Admin", "admin123" },
-      new Object[] { "pooja", "welcome" },
+      new Object[] { "Admin", "admin123" },
     };
   }
   @BeforeClass
