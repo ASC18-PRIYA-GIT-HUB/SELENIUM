@@ -2,7 +2,7 @@
 <suite name="Snapdeal_Suite">
   <test name="Login_Test">
     <classes>
-      <class name="com.snapdeal.test.LoginSnapdeal"/>
+      <class name="com.snapdeal.tests.LoginSnapdeal"/>
     </classes>
   </test>
 </suite>
