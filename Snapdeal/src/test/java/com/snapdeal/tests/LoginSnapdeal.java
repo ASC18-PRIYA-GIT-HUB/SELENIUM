@@ -1,10 +1,18 @@
 package com.snapdeal.tests;
 
+
+import java.time.Duration;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.*;
 import com.aventstack.extentreports.*;
 import com.snapdeal.base.BaseTest;
 import com.snapdeal.pages.*;
 import com.snapdeal.utilities.ScreenshotUtilities;
+
+import io.netty.handler.timeout.TimeoutException;
 
 public class LoginSnapdeal extends BaseTest {
 
@@ -27,8 +35,21 @@ public class LoginSnapdeal extends BaseTest {
         test = extent.createTest("Step 1: Login with Mobile Number");
         try {
             driver.get("https://www.snapdeal.com/login");
-            login.loginWithMobile("9360362324"); // Enter your mobile here
-            test.pass("Login initiated. OTP should be entered manually.");
+            login.loginWithMobile("7207818215"); // Enter your mobile here
+            test.info("OTP screen displayed. Waiting for OTP verification...");
+
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
+
+            try {
+                // ✅ Check for successful login after OTP verification
+                wait.until(ExpectedConditions.visibilityOfElementLocated(
+                    By.xpath("//span[contains(text(),'Hi')]")
+                ));
+                test.pass("✅ OTP verified successfully. Login Passed!");
+            } catch (TimeoutException te) {
+                test.fail("❌ OTP verification failed or login not completed!");
+            }
+
         } catch(Exception e) {
             test.fail("Login failed: " + e.getMessage());
         }
