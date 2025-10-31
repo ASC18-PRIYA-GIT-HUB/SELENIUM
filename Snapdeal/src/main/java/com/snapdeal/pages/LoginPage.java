@@ -21,13 +21,14 @@ public class LoginPage {
     }
 
     public void loginWithMobile(String mobileNumber) {
-
         try {
             driver.get("https://www.snapdeal.com/");
+            System.out.println("✅ Navigating to: " + driver.getCurrentUrl());
+            System.out.println("✅ Page title: " + driver.getTitle());
+
             wait.until(ExpectedConditions.visibilityOfElementLocated(signInHover)).click();
             wait.until(ExpectedConditions.elementToBeClickable(loginBtn)).click();
 
-            // Switch into Login iframe
             wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(loginIframe));
 
             WebElement mobile = wait.until(ExpectedConditions.visibilityOfElementLocated(mobileField));
@@ -37,7 +38,7 @@ public class LoginPage {
             wait.until(ExpectedConditions.elementToBeClickable(continueBtn)).click();
 
             System.out.println("✅ Mobile entered, please enter OTP manually within 45 seconds...");
-            Thread.sleep(45000); // Wait manually for OTP authentication
+            Thread.sleep(45000);
 
             driver.switchTo().defaultContent();
             System.out.println("✅ Login Completed Successfully ✅");
