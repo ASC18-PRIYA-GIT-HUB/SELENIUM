@@ -30,9 +30,9 @@ public class Appium_Snapdeal_Login {
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability("platformName", "Android");
         caps.setCapability("appium:automationName", "UiAutomator2");
-        caps.setCapability("appium:deviceName", "vivo T3x 5G");
-        caps.setCapability("appium:udid", "10BEAG0MN5004FT");
-        caps.setCapability("appium:platformVersion", "14");
+        caps.setCapability("appium:deviceName", "POCO M2 Pro");
+        caps.setCapability("appium:udid", "e72b475b");
+        caps.setCapability("appium:platformVersion", "12");
 
         // ✅ Snapdeal App details
         caps.setCapability("appium:appPackage", "com.snapdeal.main");
@@ -84,3 +84,4 @@ public class Appium_Snapdeal_Login {
         extent.flush();
     }
 }
+
