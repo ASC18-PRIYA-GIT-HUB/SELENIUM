@@ -36,8 +36,8 @@ class TestSnapdealE2E:
                     (By.XPATH, "//input[@placeholder='Enter your pincode' and @maxlength='6']"))
             )
             pincode_input.clear()
-            pincode_input.send_keys("614901")
-            print("Entered pincode: 614901")
+            pincode_input.send_keys("600119")
+            print("Entered pincode: 600119)
 
             check_button = self.wait.until(
                 EC.element_to_be_clickable((By.XPATH, "//button[contains(@class,'pincode-check')]"))
@@ -126,5 +126,6 @@ class TestSnapdealE2E:
             # Capture screenshot on failure (optional)
             # capture_failure("CartEmptyCheckFailure", e)
             print(f"Exception occurred: {e}")
+
 
 
